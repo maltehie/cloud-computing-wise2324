@@ -4,6 +4,7 @@ services:
   
   pgadmin:
   image: dpage/pgadmin4
+  container_name: pgadmin
   environment:
     PGADMIN_DEFAULT_EMAIL: admin@pgadmin.com
     PGADMIN_DEFAULT_PASSWORD: password
@@ -17,7 +18,7 @@ services:
 
   postgres_db:
     image: postgres:15
-    container_name: 
+    container_name: postgres_db
     restart: unless-stopped
     environment:
       - POSTGRES_USER=postgres
