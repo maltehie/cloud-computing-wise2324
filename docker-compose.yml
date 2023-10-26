@@ -1,0 +1,11 @@
+name: "BaseApp"
+
+services:
+  baseapp:
+    container_name: baseapp
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      -80:4200/tcp
