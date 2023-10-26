@@ -36,5 +36,5 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
-      -80:4200/tcp
+      - 80:4200/tcp
 
