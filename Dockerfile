@@ -10,4 +10,4 @@ RUN npm install -g @angular/cli
 RUN npm i
 EXPOSE 4200
 
-ENTRYPOINT ["ng", "serve", "--open"]
+ENTRYPOINT ["ng", "serve", "--open" , "--host", "0.0.0.0"]
